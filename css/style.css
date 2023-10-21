@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+.sidebar {
+  width: 4rem;
+}
+.sidebar.open {
+  width: 12rem;
+}
+
+.sidebar .sidebar-link-text {
+  display: none;
+}
+.sidebar.open .sidebar-link-text {
+  display: block;
+}
+.sidebar.open div ul li a {
+  justify-content: flex-start;
+}
+.sidebar.open div ul li a i {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.sidebar div ul li,
+.sidebar.open div ul li {
+  position: relative;
+}
+.sidebar div ul li.active::before,
+.sidebar.open div ul li.active::before {
+  content: "";
+  background-color: rgb(59, 130, 246);
+  height: 100%;
+  width: 0.33rem;
+  left: 0;
+  position: absolute;
+}
+.sidebar div ul li.active a,
+.sidebar.open div ul li.active a {
+  background-color: rgb(226, 232, 240);
+}
+.sidebar .accounr-photo {
+  width: 3rem;
+}
+.sidebar.open .accounr-photo {
+  width: 9rem;
+}
+/* .sidebar ,
+.sidebar.open */
