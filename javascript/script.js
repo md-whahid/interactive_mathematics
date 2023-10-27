@@ -7,6 +7,11 @@ sidebarButton.addEventListener("click", () => {
   sidebar.classList.toggle("open");
 });
 
-sidebarLinkText.addEventListener("click", () => {
-  sidebarLink.classList.toggle("active");
-});
+// sidebarLinkText.addEventListener("click", () => {
+//   sidebarLink.classList.toggle("active");
+// });
+sidebarLinkText.forEach(
+  addEventListener("click", () => {
+    sidebarLink.classList.toggle("active");
+  }),
+);
